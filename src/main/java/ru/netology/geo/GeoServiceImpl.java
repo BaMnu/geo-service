@@ -14,7 +14,7 @@ public class GeoServiceImpl implements GeoService {
      */
     public Location byIp(String ip) {
         if (LOCALHOST.equals(ip)) {
-            return new Location(null, null, null, 0);
+            return new Location("null", null, "null", 0);
         } else if (MOSCOW_IP.equals(ip)) {
             return new Location("Moscow", Country.RUSSIA, "Lenina", 15);
         } else if (NEW_YORK_IP.equals(ip)) {
